@@ -9,9 +9,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
     <title>Hottello</title>
   </head>
-  <body>
+  <body style="background-color: #fff8dc">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -34,36 +35,44 @@
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="room.html">ROOMS</a>
+              <a class="nav-link active" aria-current="page" href="room.html"
+                >ROOMS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="services.html">SERVICES</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="services.html"
+                >SERVICES</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+              <a class="nav-link active" aria-current="page" href="gallery.html"
+                >GALLERY</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >CONTACT</a
+              >
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <a href="login.html">
+            <button type="button" class="btn btn-info">Log in</button></a
+          >
+          <a class="ms-2" href="signup.html"
+            ><button type="button" class="btn btn-info">Sign up</button></a
+          >
         </div>
       </div>
     </nav>
-    <!-- Header Section -->
+    <!-- Carousel Section -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -99,8 +108,12 @@
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h1>Welcome To Hotello</h1>
+            <div>
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -109,9 +122,13 @@
             class="d-block w-100 img-fluid"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h1>Golden Autumn Offer</h1>
+            <div>
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -121,8 +138,12 @@
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h1>Welcome To Hotello</h1>
+            <div>
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+              <img src="image/drink.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -145,26 +166,56 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- Check Rates -->
+    <section style="position: absolute; margin-left: 280px; margin-top: -100px;">
+      <div class=" container mx-auto d-flex justify-content-evenly bg-body  rounded p-3" style="height: 100px; padding-top: 100px;">
+        <div>
+          <input type="date" name="" id=""  style="width: 300px; height: 50px;"/>
+        </div>
+        <div>
+          <select class="form-select" id="" style="width: 250px; height: 50px;">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div>
+          <select class="form-select" id="" style="width: 250px; height: 50px;">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info"  style="height: 50px;">Check Rates</button>
+        </div>
+      </div>
+    </section>
     <!-- Best Service for you -->
-    <section>
+    <section class="" style="margin-top: 150px;">
       <div class="text-center">
         <img src="image/blank.png" alt="" />
-        <h1>Best Service for you</h1>
+        <h1>Best <span style="color: darkgoldenrod">Service</span> for you</h1>
       </div>
-      <div class="container mx-auto row row-cols-2">
+      <div class="container mx-auto row row-cols-2 mt-5">
         <div>
           <img
+            id="image-1"
             src="image/room_A.jpg"
-            class="img-fluid rounded float-start"
+            class="img-fluid img-thumbnail rounded float-start"
             alt="..."
           />
         </div>
-        <div>
+        <div style="padding-top: 100px; padding-left: 80px">
           <h2>ROOMS & APARTMENTS</h2>
+          <br />
+          <br />
           <p>
-            Abundantly tree made. Days saw thing whales may, creeping after
-            abundantly waters, fourth so were, gathered above cattle lights
-            waters.
+            Abundantly tree made. Days saw thing whales may, <br />creeping
+            after abundantly waters, fourth so were, <br />gathered above cattle
+            lights waters.
           </p>
         </div>
         <div>
@@ -198,12 +249,12 @@
       </div>
     </section>
     <!-- Room & suits -->
-    <section>
+    <section class="mt-5">
       <div class="text-center">
         <img src="image/blank.png" alt="" />
         <h1>Room & suits</h1>
       </div>
-      <div class="d-flex justify-content-evenly">
+      <div class="d-flex justify-content-evenly mt-5">
         <div class="card" style="width: 18rem">
           <img src="image/single.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -212,7 +263,7 @@
               Designed for practicality and comfort, these contemporary-styled
               rooms featur...
             </p>
-            <a href="#" class="btn btn-primary">Book Now</a>
+            <a href="room.html" class="btn btn-primary">Book Now</a>
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -223,7 +274,7 @@
               This spacious 2 bed with large <br />living room and Queen Size
               bedrooms.
             </p>
-            <a href="#" class="btn btn-primary">Book Now</a>
+            <a href="room.html" class="btn btn-primary">Book Now</a>
           </div>
         </div>
         <div class="card" style="width: 18rem">
@@ -234,13 +285,13 @@
               Live at the historic Plaza Residences. Spacious and bright one
               Bedroom
             </p>
-            <a href="#" class="btn btn-primary">Book Now</a>
+            <a href="room.html" class="btn btn-primary">Book Now</a>
           </div>
         </div>
       </div>
     </section>
     <!-- Why choose Us -->
-    <section>
+    <section class="mt-5">
       <div class="text-center">
         <img src="image/blank.png" alt="" />
         <h2>Why Choose Us</h2>
@@ -249,9 +300,9 @@
           you’ll female earth second moveth.
         </p>
       </div>
-      <div class="container mx-auto row row-cols-4">
-        <div class="">
-          <img src="image/internet.png" alt="" />
+      <div class="container mt-5 mx-auto row row-cols-4" style="padding-left: 130px">
+        <div class="rounded-circle">
+          <img style="" src="image/internet.png" alt="" />
           <p>Internet</p>
         </div>
         <div>
@@ -285,13 +336,15 @@
       </div>
     </section>
     <!-- Customer Reviews -->
-    <section>
-      <h1 class="text-center">Customer <span class="text-warning">Reviews</span></h1>
-      <div class="d-flex justify-content-evenly">
+    <section class="mt-5" style="background-color: #fff8dc">
+      <h1 class="text-center pt-3">
+        Customer <span class="text-warning">Reviews</span>
+      </h1>
+      <div class="d-flex justify-content-evenly mt-5 p-5" style="">
         <div class="card" style="width: 18rem">
           <div class="card-body">
             <div class="text-center">
-              <img class="rounded-circle" src="image/sourov.jpeg" alt="">
+              <img class="rounded-circle" src="image/sourov.jpeg" alt="" />
             </div>
             <h3 class="text-center">Sourov</h3>
             <p class="card-text">
@@ -300,37 +353,36 @@
               staff who take care of breakfast and cleaning are always ready to
               help. The rooms are really clean and the beds are comfy.
             </p>
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <div class="card-body">
             <div class="text-center">
-              <img class="rounded-circle" src="image/taifur.jpeg" alt="">
+              <img class="rounded-circle" src="image/taifur.jpeg" alt="" />
             </div>
             <h3 class="text-center">Taifur</h3>
-            
+
             <p class="card-text">
               The hotel is comfortable and the staff is very helpful. The
               location is strategic between new and old Dhaka, that cuts
               travelling time a lot. Overall experience is excellent and value
               for money.
             </p>
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <div class="card-body">
             <div class="text-center">
-              <img class="rounded-circle" src="image/turjo.jpeg" alt="">
+              <img class="rounded-circle" src="image/turjo.jpeg" alt="" />
             </div>
             <h3 class="text-center">Turjo</h3>
             <p class="card-text">
@@ -338,19 +390,18 @@
               of my second home. Combo package of Great hospitality, Natural
               beauty of surrounding with pool and kid play ground facility.
             </p>
-            
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
-            <img src="image/star.png" alt="">
+
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
+            <img src="image/star.png" alt="" />
           </div>
         </div>
       </div>
-      
     </section>
     <!-- Footer -->
-    <section>
+    <section class="mt-5" style="background-color: #778899">
       <div class="d-flex justify-content-evenly">
         <div>
           <h2>Hotello</h2>
@@ -365,8 +416,10 @@
           <h2>Contact Us</h2>
           <p>Sughandha Point,Cox's bazar 1130</p>
 
-          <p>Contact No: 01874004733 <br>
-            Emergency No: 01531153157</p>
+          <p>
+            Contact No: 01874004733 <br />
+            Emergency No: 01531153157
+          </p>
 
           <p>Email:info@hotello.com</p>
         </div>
@@ -379,9 +432,7 @@
               placeholder="Enter Your Email"
               aria-label="Email"
             />
-            <button class="btn btn-outline-success" type="submit">
-              Join
-            </button>
+            <button class="btn btn-outline-success" type="submit">Join</button>
           </form>
           <p>Enter your email address for promotions and news.</p>
         </div>
