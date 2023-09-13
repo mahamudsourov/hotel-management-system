@@ -13,10 +13,10 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="image/hotello_logo.svg" alt="" />
-        <a class="navbar-brand" href="#">Hotello</a>
+        <img src="image/logo.jpeg" style="width: 50px;" alt="" />
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,9 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="justify-content-evenly navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="room.html"
@@ -54,7 +52,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contact.html"
@@ -62,40 +62,44 @@
               >
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <a href="login.html">
+            <button type="button" class="btn btn-info">Log in</button></a
+          >
+          <a class="ms-2" href="signup.html"
+            ><button type="button" class="btn btn-info">Sign up</button></a
+          >
         </div>
       </div>
     </nav>
     <!-- Nav End -->
-    <header>
-      <h1 class="text-center">Contact Us</h1>
+    <header class="mb-5">
+      <div class="card text-bg-dark">
+        <img style="height: 500px;"
+          src="image/contact.jpg"
+          class="card-img"
+          alt="..."
+        />
+        <div class="card-img-overlay mt-5 text-center">
+          <h5 style="margin-top: 200px; font-size: 100px;" class="card-title fw-bolder text-white"></h5>
+        </div>
+      </div>
     </header>
     <section>
       <div class="container mx-auto d-flex">
-        <div>
+        <div style="margin-left: 100px; margin-top: 200px;" class="mt-4 text-center">
           <h2>WE WORK ON THE FOREFRONT</h2>
-          <h3>
-            To learn more about our service offerings and industry expertise or
-            to have an Consulting professional contact you directly,<br> please fill
+          <h5 class="mt-3">
+            To learn more about our service offerings and <br> industry expertise or
+            to have an Consulting <br> professional contact you directly,<br> please fill
             out the form below or submit an email.
-          </h3>
+          </h5>
         </div>
-        <div>
+        <div style="margin-left: 400px;">
           <div class="d-flex">
             <div>
               <img class="rounded-circle" src="image/taifur.jpeg" alt="" />
             </div>
-            <div>
+            <div class="ms-2">
               <h4>Taifur</h4>
               <h5>Director</h5>
               <p class="text-warning">+880-1874004733</p>
@@ -105,7 +109,7 @@
             <div>
               <img class="rounded-circle" src="image/sourov.jpeg" alt="" />
             </div>
-            <div>
+            <div class="ms-2">
               <h4>Sourov</h4>
               <h5>Administrator</h5>
               <p class="text-warning">+880-1531153157</p>
@@ -115,7 +119,7 @@
             <div>
               <img class="rounded-circle" src="image/turjo.jpeg" alt="" />
             </div>
-            <div>
+            <div class="ms-2">
               <h4>Turzo</h4>
               <h5>Manager</h5>
               <p class="text-warning">+880-1874004733</p>
@@ -124,12 +128,13 @@
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="text-center">
+    <section class="container mt-5">
+      <div class="text-center ">
+        <img src="image/blank.png" alt="">
         <h2>Feadback Form</h2>
       </div>
-      <div>
-        <div class= "d-flex">
+      <div class="">
+        <div style="margin-left: 300px;" class= "w-50">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label"
               >Email address</label
@@ -153,23 +158,23 @@
             />
           </div>
         </div>
-        <div class="mb-3">
+        <div style="margin-left: 300px;" class="mb-3 w-50">
           <label for="exampleFormControlTextarea1" class="form-label"
             >Example textarea</label
           >
           <textarea
-            class="form-control"
+            class="form-control mt-3"
             id="exampleFormControlTextarea1"
             rows="3"
           ></textarea>
-          <button class="btn btn-secondary"> Send Message</button>
+          <button class="btn btn-secondary mt-3"> Send Message</button>
         </div>
         
       </div>
       
     </section>
-    <!-- footer -->
-    <section>
+    <!-- Footer -->
+    <section class="mt-5" style="background-color: darkgray;" >
       <div class="d-flex justify-content-evenly">
         <div>
           <h2>Hotello</h2>

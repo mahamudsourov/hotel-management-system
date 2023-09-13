@@ -11,12 +11,12 @@
     />
     <title>Hotello</title>
   </head>
-  <body>
+  <body style="background-color: rgb(128, 167, 167)">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="image/hotello_logo.svg" alt="" />
-        <a class="navbar-brand" href="#">Hotello</a>
+        <img src="image/logo.jpeg" style="width: 50px" alt="" />
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,7 +54,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contact.html"
@@ -62,100 +64,164 @@
               >
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <a href="login.html">
+            <button type="button" class="btn btn-info">Log in</button></a
+          >
+          <a class="ms-2" href="signup.html"
+            ><button type="button" class="btn btn-info">Sign up</button></a
+          >
         </div>
       </div>
     </nav>
     <!-- Nav End -->
     <header class="mb-5">
       <div class="card text-bg-dark">
-        <img
+        <img style="height: 700px;"
           src="image/service/service-header.jpg"
           class="card-img"
           alt="..."
         />
         <div class="card-img-overlay mt-5 text-center">
-          <h5 class="card-title fw-bolder text-white">Services</h5>
+          <h5 style="margin-top: 200px; font-size: 100px;" class="card-title fw-bolder text-white">Services</h5>
         </div>
       </div>
     </header>
     <section>
-        <div class="d-flex justify-content-evenly">
-            <div class="card" style="width: 18rem">
-                <img src="image/service/food.jpg"card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Food And Bevarage</h5>
-                  <p class="card-text">
-                    All the guests can celebrate a special occasion or just s...
-                  </p>
-
-                </div>
+      <div class="d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem">
+          <img src="image/service/food.jpg" card-img-top alt="..." />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 40px;
+                "
+              >
+                From: 200BDT
               </div>
-            <div class="card" style="width: 18rem">
-                <img src="image/service/free-transfer.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Free Tranfer</h5>
-                  <p class="card-text">
-                    Didn’t manage to book good transportation? We can help! W...
-                  </p>
-                </div>
-              </div>
-            <div class="card" style="width: 18rem">
-                <img src="image/service/spa-f.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Spa & Fitness</h5>
-                  <p class="card-text">
-                    As a guest, you can enjoy our Spa facilities to relax aft...
-                  </p>
-                </div>
-              </div>
+          <div class="card-body">
+            <h5 class="card-title">Food And Bevarage</h5>
+            <p class="card-text">
+              All the guests can celebrate a special occasion or just s...
+            </p>
+          </div>
         </div>
-        <div class="d-flex justify-content-evenly">
-            <div class="card" style="width: 18rem">
-                <img src="image/service/kids.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kids Zone</h5>
-                  <p class="card-text">
-                    We offer extra space and playing materials for kids...
-                  </p>
-                  
-                </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="image/service/free-transfer.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 40px;
+                "
+              >
+                From: 200BDT
               </div>
-            <div class="card" style="width: 18rem">
-                <img src="image/service/locker.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Safe & Secure</h5>
-                  <p class="card-text">
-                    Keep your belongings safe! Use our storage services and k...
-                  </p>
-                  
-                </div>
-              </div>
-            <div class="card" style="width: 18rem">
-                <img src="image/service/laundry_A.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Laundry Service</h5>
-                  <p class="card-text">
-                    We provide all laundry services in our Hotel. Be sure tha...
-                  </p>
-                  
-                </div>
-              </div>
+          <div class="card-body">
+            <h5 class="card-title">Free Tranfer</h5>
+            <p class="card-text">
+              Didn’t manage to book good transportation? We can help! W...
+            </p>
+          </div>
         </div>
-        
+        <div class="card" style="width: 18rem">
+          <img src="image/service/spa-f.jpg" class="card-img-top" alt="..." />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 40px;
+                "
+              >
+                From: 200BDT
+              </div>
+          <div class="card-body">
+            <h5 class="card-title">Spa & Fitness</h5>
+            <p class="card-text">
+              As a guest, you can enjoy our Spa facilities to relax aft...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-evenly mt-5">
+        <div class="card" style="width: 18rem">
+          <img src="image/service/kids.jpg" class="card-img-top" alt="..." />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 30px;
+                "
+              >
+                From: 200BDT
+              </div>
+          <div class="card-body">
+            <h5 class="card-title">Kids Zone</h5>
+            <p class="card-text">
+              We offer extra space and playing materials for kids...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="image/service/locker.jpg" class="card-img-top" alt="..." />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 50px;
+                "
+              >
+                From: 200BDT
+              </div>
+          <div class="card-body">
+            <h5 class="card-title">Safe & Secure</h5>
+            <p class="card-text">
+              Keep your belongings safe! Use our storage services and k...
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="image/service/laundry_A.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div
+          class="position-absolute top-50 start-50 translate-middle"
+                style="
+                  border: 1px solid yellow;
+                  background-color: goldenrod;
+                  border-radius: 5px;
+                  margin-top: 30px;
+                "
+              >
+                From: 200BDT
+              </div>
+          <div class="card-body">
+            <h5 class="card-title">Laundry Service</h5>
+            <p class="card-text">
+              We provide all laundry services in our Hotel. Be sure tha...
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- footer -->
-    <section>
+    <!-- Footer -->
+    <section class="mt-5" style="background-color: darkgray">
       <div class="d-flex justify-content-evenly">
         <div>
           <h2>Hotello</h2>

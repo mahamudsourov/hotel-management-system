@@ -13,10 +13,10 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="image/hotello_logo.svg" alt="" />
-        <a class="navbar-brand" href="#">Hotello</a>
+        <img src="image/logo.jpeg" style="width: 50px;" alt="" />
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,9 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="justify-content-evenly navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="room.html"
@@ -41,7 +39,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="services.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="services.html"
                 >SERVICES</a
               >
             </li>
@@ -51,7 +52,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >ABOUT</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contact.html"
@@ -59,17 +62,12 @@
               >
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <a href="login.html">
+            <button type="button" class="btn btn-info">Log in</button></a
+          >
+          <a class="ms-2" href="signup.html"
+            ><button type="button" class="btn btn-info">Sign up</button></a
+          >
         </div>
       </div>
     </nav>
@@ -89,273 +87,266 @@
       </div>
     </header>
     <!-- rooms -->
-    <section>
-      <div class="container mx-auto d-flex">
-        <div class="row row-cols-2">
-          <div class="card" style="width: 18rem">
-            <img src="image/double.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Double Room</h5>
-              <p class="card-text">
-                This spacious 2 bed with large <br />living room and Queen Size
-                bedrooms.
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="image/single.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Single Room</h5>
-              <p class="card-text">
-                Economy Single Room is well-furnished guest rooms<br />
-                11 square meters
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="image/delux.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">delux Room</h5>
-              <p class="card-text">
-                Furnished in classic and essential style,<br>
-                 these comfortable rooms have balcon.
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="image/standard-single.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Standard Single Room</h5>
-              <p class="card-text">
-                The classic room is equipped with desk and chair,<br />
-                2 single beds, TV and plent...
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="image/standard-double.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Standard Double Room</h5>
-              <p class="card-text">
-                This spacious 2 bed with large <br />living room and Queen Size
-                bedrooms.
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="image/royal-room.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Royal Room</h5>
-              <p class="card-text">
-                These luxury hotel rooms come with king size beds,<br>
-                 views of the hotel's strik...
-              </p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-        </div>
+    <section class="mt-5">
+      <div class="container mx-auto m-3 d-flex">
         <div>
-          <div>
-            <h2 class="bg-dark text-white">Room Type</h2>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Delux Room
-              </label>
+          <div class="row row-cols-2">
+            <div class="card" style="width: 18rem">
+              <img src="image/double.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Double Room</h5>
+                <p class="card-text">
+                  This spacious 2 bed with large <br />living room and Queen Size
+                  bedrooms.
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Double Room
-              </label>
+            <div class="card" style="width: 18rem">
+              <img src="image/single.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Single Room</h5>
+                <p class="card-text">
+                  Economy Single Room is well-furnished guest rooms<br />
+                  11 square meters
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Single Room
-              </label>
+            <div class="card" style="width: 18rem">
+              <img src="image/delux.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">delux Room</h5>
+                <p class="card-text">
+                  Furnished in classic and essential style,<br>
+                   these comfortable rooms have balcon.
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-          </div>
-          <div>
-            <h2 class="bg-dark text-white">Room Rate</h2>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
+        </div>
+          <div class="d-flex mt-4 p-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="image/standard-single.jpg"
+                class="card-img-top"
+                alt="..."
               />
-              <label class="form-check-label" for="flexCheckChecked">
-                breakfast And Dinner Included
-              </label>
+              <div class="card-body">
+                <h5 class="card-title">Standard Single Room</h5>
+                <p class="card-text">
+                  The classic room is equipped with desk and chair,<br />
+                  2 single beds, TV and plent...
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-          </div>
-          <div>
-            <h2 class="bg-dark text-white">Guests</h2>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
+            <div class="card" style="width: 18rem">
+              <img
+                src="image/standard-double.jpg"
+                class="card-img-top"
+                alt="..."
               />
-              <label class="form-check-label" for="flexCheckChecked">
-                One
-              </label>
+              <div class="card-body">
+                <h5 class="card-title">Standard Double Room</h5>
+                <p class="card-text">
+                  This spacious 2 bed with large <br />living room and Queen Size
+                  bedrooms.
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Two
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Three
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Four
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Five
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Six
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                checked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                Seven
-              </label>
+            <div class="card" style="width: 18rem">
+              <img src="image/royal-room.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Royal Room</h5>
+                <p class="card-text">
+                  These luxury hotel rooms come with king size beds,<br>
+                   views of the hotel's strik...
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
           </div>
-          <div>
-            <h2 class="bg-dark text-white">Children</h2>
+          </div>
+        <div>
+          <div style="margin-left: 150px;">
+            <div>
+              <h2 class="bg-dark text-white">Room Type</h2>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Delux Room
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Double Room
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Single Room
+                </label>
+              </div>
+            </div>
+            <div>
+              <h2 class="bg-dark text-white">Room Rate</h2>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  breakfast And Dinner Included
+                </label>
+              </div>
+            </div>
+            <div>
+              <h2 class="bg-dark text-white">Guests</h2>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  One
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Two
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Three
+                </label>
+              </div>
+            <div>
+              <h2 class="bg-dark text-white">Children</h2>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  One
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  two
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Three
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Footer -->
-    <section>
-        <div class="d-flex justify-content-evenly">
-          <div>
-            <h2>Hotello</h2>
-            <p>
-              We always strive for growth and development as StylemixThemes.<br />
-              We don’t want to have a large team, we want to have a team that
-              works in.<br />
-              Our slogan is “Every day is the last day”.
-            </p>
-          </div>
-          <div>
-            <h2>Contact Us</h2>
-            <p>Sughandha Point,Cox's bazar 1130</p>
-  
-            <p>Contact No: 01874004733 <br>
-              Emergency No: 01531153157</p>
-  
-            <p>Email:info@hotello.com</p>
-          </div>
-          <div>
-            <h2>Stay With Us</h2>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="email"
-                placeholder="Enter Your Email"
-                aria-label="Email"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Join
-              </button>
-            </form>
-            <p>Enter your email address for promotions and news.</p>
-          </div>
+    <section class="mt-5" style="background-color:darkgray">
+      <div class="d-flex justify-content-evenly">
+        <div>
+          <h2>Hotello</h2>
+          <p>
+            We always strive for growth and development as StylemixThemes.<br />
+            We don’t want to have a large team, we want to have a team that
+            works in.<br />
+            Our slogan is “Every day is the last day”.
+          </p>
         </div>
-        <hr class="border border-primary" />
-        <h6 class="text-center">
-          Copyright © 2023 Hotello Plus Theme by StylemixThemes
-        </h6>
-      </section>
+        <div>
+          <h2>Contact Us</h2>
+          <p>Sughandha Point,Cox's bazar 1130</p>
+
+          <p>
+            Contact No: 01874004733 <br />
+            Emergency No: 01531153157
+          </p>
+
+          <p>Email:info@hotello.com</p>
+        </div>
+        <div>
+          <h2>Stay With Us</h2>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="email"
+              placeholder="Enter Your Email"
+              aria-label="Email"
+            />
+            <button class="btn btn-outline-success" type="submit">Join</button>
+          </form>
+          <p>Enter your email address for promotions and news.</p>
+        </div>
+      </div>
+      <hr class="border border-primary" />
+      <h6 class="text-center">
+        Copyright © 2023 Hotello Plus Theme by StylemixThemes
+      </h6>
+    </section>
     <!-- Footer End -->
 
     <script
